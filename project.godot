@@ -8,16 +8,35 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "Rombo",
+"language": "GDScript",
+"path": "res://model/Rombo.gd"
+}, {
+"base": "Area2D",
+"class": "Violeta",
+"language": "GDScript",
+"path": "res://model/Violeta.gd"
+} ]
 _global_script_class_icons={
-
+"Rombo": "",
+"Violeta": ""
 }
 
 [application]
 
 config/name="The Official Minion"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
+
+[layer_names]
+
+2d_physics/layer_1="Violeta"
+2d_physics/layer_2="Rombos"
+2d_physics/layer_3="Triangulos"
 
 [rendering]
 
+environment/default_clear_color=Color( 0.105882, 0.105882, 0.105882, 1 )
 environment/default_environment="res://default_env.tres"

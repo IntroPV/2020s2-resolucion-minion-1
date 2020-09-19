@@ -1,5 +1,7 @@
 extends Area2D
 
+class_name Violeta
+
 const SPEED = 200
 const DASHING_MULTIPLIER = 3
 const DASHING_DURATION = 0.4 #segundos
@@ -53,5 +55,4 @@ func _change_state(new_state):
 	state = new_state
 	if old_state != new_state:
 		_on_new_state(old_state, new_state)
-
 
